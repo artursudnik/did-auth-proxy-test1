@@ -35,6 +35,7 @@ async function bootstrap() {
   };
 
   console.log('ala');
+  console.log('ala');
 
   Object.keys(signals).forEach((signal) => {
     process.on(signal, async () => {
