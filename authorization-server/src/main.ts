@@ -34,8 +34,6 @@ async function bootstrap() {
     SIGTERM: 15,
   };
 
-  console.log('ala');
-
   Object.keys(signals).forEach((signal) => {
     process.on(signal, async () => {
       await app.close();
